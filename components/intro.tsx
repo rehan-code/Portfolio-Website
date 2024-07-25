@@ -33,7 +33,7 @@ export default function Intro() {
          delay: 0.5,
         }}
       >
-        I'm a{" "} <span className="font-bold">Software Engineer</span>
+        {"I'm a "} <span className="font-bold">Software Engineer</span>
       </motion.h1>
 
       <motion.h1
@@ -45,7 +45,7 @@ export default function Intro() {
          delay: 0.5,
         }}
       >
-        Excited to learn about{" "} <span className="font-bold">AI</span> 
+        <span className="font-bold">Excited</span> to learn about{" "} <span className="font-bold">AI</span> 
       </motion.h1>
 
       <motion.div

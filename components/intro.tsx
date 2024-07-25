@@ -19,13 +19,13 @@ export default function Intro() {
     <section
       // ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] py-2 text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[60rem] pb-2 text-center sm:mb-0 scroll-mt-[100rem]"
     >
 
-      <TextGenerateEffect words="Rehan Nagoor Mohideen" className="text-center text-[80px] md:text-5xl lg:text-6xl" duration={0.7}/>
+      <TextGenerateEffect words="Hi! I'm Rehan Nagoor Mohideen" className="text-center text-[80px] md:text-5xl lg:text-8xl" duration={0.7}/>
 
       <motion.h1
-        className="mt-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mt-12 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

@@ -19,13 +19,13 @@ export default function Intro() {
     <section
       // ref={ref}
       id="home"
-      className="mb-28 max-w-[60rem] pb-2 text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[60rem] pb-6 text-center sm:mb-0 scroll-mt-[100rem] mx-auto"
     >
 
       <TextGenerateEffect words="Hi! I'm Rehan Nagoor Mohideen" className="text-center text-[80px] md:text-5xl lg:text-8xl" duration={0.7}/>
 
       <motion.h1
-        className="mt-12 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mt-12 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -33,11 +33,11 @@ export default function Intro() {
          delay: 0.5,
         }}
       >
-        {"I'm a "} <span className="font-bold">Software Engineer</span>
+        {"A passionate "} <span className="font-semibold">Software Engineer</span>
       </motion.h1>
 
       <motion.h1
-        className="mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -45,7 +45,7 @@ export default function Intro() {
          delay: 0.5,
         }}
       >
-        <span className="font-bold">Excited</span> to learn about{" "} <span className="font-bold">AI</span> 
+        <span className="font-semibold">Excited</span> to build {" "} <span className="font-semibold">AI</span>  {" "} projects!
       </motion.h1>
 
       <motion.div

@@ -2,9 +2,9 @@ export const LeftSocials = () => {
   return (
     <div
       //  orientation="left"
-      className="w-7 fixed bottom-0 left-10 right-auto z-10 block"
+      className="w-7 fixed bottom-6 left-10 right-auto z-10  lg:visible "
     >
-      <ul className=" items-center m-0 p-0 list-none">
+      <ul className=" items-center m-0 p-0 list-none space-y-5">
         <li>
           <a
             href="https://github.com/rehan-code"
@@ -53,6 +53,7 @@ export const LeftSocials = () => {
             </svg>
           </a>
         </li>
+        <div className="border-white border-2 h-10 w-0 mx-auto"></div>
       </ul>
     </div>
   );

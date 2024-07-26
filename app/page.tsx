@@ -11,7 +11,7 @@ export default function Home() {
         <FloatingNav navItems={links} />
         <Intro />
         <Grid />
-        {/* <LeftSocials /> */}
+        <LeftSocials />
       </div>
     </main>
   );

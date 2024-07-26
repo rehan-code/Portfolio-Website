@@ -59,9 +59,9 @@ export const BentoGridItem = ({
         )}
       >
         {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-        <div className=" font-sans font-extralight md:max-w-40 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10 text-center">
+        {/* <div className=" font-sans font-extralight md:max-w-40 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10 text-center">
           {description}
-        </div>
+        </div> */}
         {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
         {/* remove mb-2 mt-2 */}
         <div
@@ -70,9 +70,9 @@ export const BentoGridItem = ({
           {title}
         </div>
         
-        {/* <div className="absolute bottom-0 pb-5 text-start font-sans font-thin tracking-wider md:max-w-80 md:text-xs lg:text-sm text-sm text-[#c1c2d3b1] z-10">
+        <div className="absolute bottom-0 pb-5 text-start font-sans font-thin tracking-wider md:max-w-80 md:text-xs lg:text-sm text-sm text-[#c1c2d3b1] z-10">
           {stack}
-        </div> */}
+        </div>
       </div>
     </a>
   );

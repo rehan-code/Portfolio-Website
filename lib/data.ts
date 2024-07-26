@@ -55,4 +55,4 @@ export const gridItems = [
      titleClassName: "justify-start",
      href: "https://github.com/rehan-code/Binary-Tree-Handling-project",
   },
-]
+];

@@ -20,7 +20,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-4 text-center",
     titleClassName: "justify-start",
     stack: "Flutter Supabase",
-    href: "https://github.com/rehan-code/Game-Library-Web-App",
+    href: "https://devpost.com/software/lendr-j4guw0?ref_content=my-projects-tab&ref_feature=my_projects",
   },
   {
     id: 1,

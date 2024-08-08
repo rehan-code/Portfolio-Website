@@ -45,7 +45,7 @@ export const BentoGridItem = ({
       className={cn(
         //   "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
         // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border-2 border-black/[0.1] dark:border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       href={href}
@@ -70,7 +70,7 @@ export const BentoGridItem = ({
           {title}
         </div>
         
-        <div className="absolute bottom-0 pb-5 text-start font-sans font-thin tracking-wider md:max-w-80 md:text-xs lg:text-sm text-sm text-[#c1c2d3b1] z-10">
+        <div className="absolute bottom-0 pb-5 text-start font-sans font-thin tracking-wider md:max-w-80 md:text-xs lg:text-sm text-sm text-neutral-900 dark:text-[#c1c2d3b1] z-10">
           {stack}
         </div>
       </div>

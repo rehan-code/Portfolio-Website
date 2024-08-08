@@ -36,7 +36,7 @@ export const LeftSocials = () => {
           duration: 0.2,
         }}
         //  orientation="left"
-        className="w-7 fixed bottom-6 left-10 right-auto z-10  lg:visible "
+        className="w-7 fixed bottom-6 left-10 right-auto z-10 hidden sm:visible "
       >
         <ul className=" items-center m-0 p-0 list-none space-y-5">
           <li>

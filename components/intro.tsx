@@ -22,10 +22,10 @@ export default function Intro() {
       className="mb-28 max-w-[60rem] pb-6 text-center sm:mb-0 scroll-mt-[100rem] mx-auto"
     >
 
-      <TextGenerateEffect words="Hi! I'm Rehan Nagoor Mohideen" className="text-center text-[80px] md:text-5xl lg:text-8xl" duration={0.7}/>
+      <TextGenerateEffect words="Hi! I'm Rehan Nagoor Mohideen" className="text-center text-[80px] text-4xl md:text-7xl lg:text-8xl" duration={0.7}/>
 
       <motion.h1
-        className="mt-12 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
+        className="mt-12 px-4 text-lg font-light !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -37,7 +37,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.h1
-        className="mb-10 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
+        className="mb-10 px-4 text- font-light !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -49,7 +49,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-row sm:flex-row items-center justify-center gap-2 px-4 text-base sm:text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

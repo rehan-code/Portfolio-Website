@@ -9,7 +9,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-2 text-center",
     titleClassName: "justify-start",
-    stack: "HTML CSS Javascript PHP SQL Jest",
+    stack: ["/HTML.svg", "/CSS.svg", "/Javascript.svg", "/PHP.svg", "/SQL.svg", "/Jest.svg"],
     href: "https://github.com/rehan-code/Game-Library-Web-App",
   },
   {
@@ -19,7 +19,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-4 text-center",
     titleClassName: "justify-start",
-    stack: "Flutter Supabase",
+    stack: ["/Flutter.svg", "/Supabase.svg"],
     href: "https://devpost.com/software/lendr-j4guw0?ref_content=my-projects-tab&ref_feature=my_projects",
   },
   {
@@ -29,7 +29,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     titleClassName: "justify-d",
-    stack: "React.js Typescript Docker Python SQL Selenium",
+    stack: ["/React.svg", "/Typescript.svg", "/Docker.svg", "/Python.svg", "/SQL.svg", "/Selenium.svg"],
     href: "https://github.com/rehan-code/Advisorlink",
   },
   {
@@ -38,7 +38,7 @@ export const gridItems = [
     description: "A TicTacToe AI",
     header: "",
     className: "lg:col-span-1 md:col-span-2 md:row-span-2 text-center",
-    stack: "C",
+    stack: ["/C.svg"],
     href: "https://github.com/rehan-code/Alphatoe",
   },
   {
@@ -48,7 +48,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-4 text-center",
     titleClassName: "justify-start",
-    stack: "Flutter Firebase",
+    stack: ["/Flutter.svg", "/Firebase.svg"],
     href: "https://github.com/rehan-code/CIS4030",
   },
   {
@@ -58,7 +58,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     titleClassName: "justify-start",
-    stack: "Java",
+    stack: ["/Java.svg"],
     href: "https://github.com/rehan-code/Student-Database-Program",
   },
   {
@@ -68,7 +68,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-1 md:col-span-2 md:row-span-4 text-center",
     titleClassName: "justify-start",
-    stack: "C",
+    stack: ["/C.svg"],
     href: "https://github.com/rehan-code/My-Shell",
   },
   {
@@ -87,7 +87,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-1 md:col-span-2 md:row-span-2 text-center",
     titleClassName: "justify-start",
-    stack: "Java",
+    stack: ["/Java.svg"],
     href: "https://github.com/rehan-code/eStore-Program",
   },
   {
@@ -97,7 +97,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     titleClassName: "justify-start",
-    stack: "C",
+    stack: ["/C.svg"],
     href: "https://github.com/rehan-code/Binary-Tree-Handling-project",
   },
   {
@@ -107,7 +107,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     titleClassName: "justify-start",
-    stack: "HTML CSS Javascript C",
+    stack: ["/HTML.svg", "/CSS.svg", "/Javascript.svg", "/C.svg"],
     href: "https://github.com/rehan-code/GPX-Manager",
   },
   //  {

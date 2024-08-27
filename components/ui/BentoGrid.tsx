@@ -70,19 +70,17 @@ export const BentoGridItem = ({
           {title}
         </div>
         
-        {/* <div className="absolute bottom-0 pb-5 text-start font-sans font-thin tracking-wider md:max-w-80 md:text-xs lg:text-sm text-sm text-neutral-900 dark:text-[#c1c2d3b1] z-10">
-          {stack}
-        </div> */}
+
         <div className="flex items-center absolute bottom-0 pb-5 text-start">
           {stack?.map((icon, index) => (
             <div
               key={index}
-              className="border border-white/[.2] rounded-full bg-gray-500/[0.2] lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+              className="border border-white/[.2] rounded-full bg-gray-500/20 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
               style={{
                 transform: `translateX(-${5 * index + 2}px)`,
               }}
             >
-              <img src={icon} alt="icon5" className="p-2" />
+              <img src={icon} alt={icon} className="p-2" />
             </div>
           ))}
         </div>

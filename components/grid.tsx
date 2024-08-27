@@ -78,6 +78,7 @@ export const gridItems = [
     header: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center",
     titleClassName: "justify-start",
+    stack: ["/unity.svg"],
     href: "https://github.com/rehan-code/2D-unity-game",
   },
   {
@@ -126,7 +127,7 @@ const Grid = () => {
   return (
     <section id="projects">
       <div className="font-extrabold text-4xl sm:text-5xl pt-24 sm:pt-32 px-12">Projects</div>
-      <BentoGrid className="max-w-[70rem] pt-10 pb-20">
+      <BentoGrid className="lg:max-w-full max-w-[70rem] pt-10 pb-20">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={i}

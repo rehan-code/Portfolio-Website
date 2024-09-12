@@ -15,12 +15,12 @@ export const gridItems = [
   {
     id: 2,
     title: "CodeCards",
-    description: "An AI support chat",
+    description: "An AI Support Chat",
     header: "",
     className: "lg:col-span-2 md:col-span-4 md:row-span-2 text-center",
     titleClassName: "justify-start",
     stack: ["/Typescript.svg", "/Nextjs.svg", "/Gemini.svg", "/Firebase.svg", "/Stripe.svg"],
-    href: "https://github.com/rehan-code/AI-Customer-Support",
+    href: "https://github.com/Team-S-I-R/codecards",
   },
   {
     id: 2,

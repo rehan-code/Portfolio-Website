@@ -33,6 +33,36 @@ export const gridItems = [
     href: "https://github.com/rehan-code/Pantry-Management-App",
   },
   {
+    id: 1,
+    title: "Codebase expert AI",
+    description: "AI that scans you codebase",
+    header: "",
+    className: "lg:col-span-2 md:col-span-6 md:row-span-4 text-center",
+    titleClassName: "justify-start",
+    stack: ["/Python.svg", "/Streamlit.svg", "/OpenAI.svg", "/Langchain.svg", "/Pinecone.svg"],
+    href: "https://github.com/Team-S-I-R/cityswipe",
+  },
+  {
+    id: 1,
+    title: "Chatter",
+    description: "Messaging app",
+    header: "",
+    className: "lg:col-span-1 md:col-span-6 md:row-span-4 text-center",
+    titleClassName: "justify-start",
+    stack: ["/Typescript.svg", "/Nextjs.svg", "/Convex.png"],
+    href: "https://github.com/rehan-code/chatter",
+  },
+  {
+    id: 1,
+    title: "Customer Churn Predictor",
+    description: "Predict customer churn",
+    header: "",
+    className: "lg:col-span-2 md:col-span-6 md:row-span-4 text-center",
+    titleClassName: "justify-start",
+    stack: ["/Python.svg", "/Streamlit.svg", "/OpenAI.svg"],
+    href: "https://github.com/rehan-code/customer-churn-prediction",
+  },
+  {
     id: 4,
     title: "Arabic Tutor AI",
     description: "An AI support chat",
@@ -61,7 +91,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     stack: ["/HTML.svg", "/CSS.svg", "/Javascript.svg", "/PHP.svg", "/SQL.svg", "/Jest.svg"],
     href: "https://github.com/rehan-code/Game-Library-Web-App",
-    image: "/project_images/games_library.png",
+    // image: "/project_images/games_library.png",
   },
   {
     id: 2,
@@ -190,7 +220,7 @@ const Grid = () => {
             className={item.className}
             href={item.href}
             stack={item.stack}
-            image={item.image ? item.image : undefined}
+            // image={item.image ? item.image : undefined}
             // imgClassName={item.imgClassName}
             // titleClassName={item.titleClassName}
             // spareImg={item.spareImg}

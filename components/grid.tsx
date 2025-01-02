@@ -3,7 +3,7 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 export const gridItems = [
   {
-    id: 2,
+    id: 1,
     title: "CitySwipe",
     description: "Find your dream destination",
     header: "",
@@ -23,7 +23,7 @@ export const gridItems = [
     href: "https://github.com/Team-S-I-R/codecards",
   },
   {
-    id: 2,
+    id: 3,
     title: "Pantry Management App",
     description: "Database Handler",
     header: "",
@@ -33,7 +33,7 @@ export const gridItems = [
     href: "https://github.com/rehan-code/Pantry-Management-App",
   },
   {
-    id: 2,
+    id: 4,
     title: "Arabic Tutor AI",
     description: "An AI support chat",
     header: "",
@@ -61,6 +61,7 @@ export const gridItems = [
     titleClassName: "justify-start",
     stack: ["/HTML.svg", "/CSS.svg", "/Javascript.svg", "/PHP.svg", "/SQL.svg", "/Jest.svg"],
     href: "https://github.com/rehan-code/Game-Library-Web-App",
+    image: "/project_images/games_library.png",
   },
   {
     id: 2,
@@ -189,7 +190,7 @@ const Grid = () => {
             className={item.className}
             href={item.href}
             stack={item.stack}
-            // img={item.img}
+            image={item.image ? item.image : undefined}
             // imgClassName={item.imgClassName}
             // titleClassName={item.titleClassName}
             // spareImg={item.spareImg}

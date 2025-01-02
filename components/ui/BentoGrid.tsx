@@ -30,6 +30,7 @@ export const BentoGridItem = ({
   titleClassName,
   stack,
   href,
+  image,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -39,6 +40,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   stack?: Array<string>;
   href?: string;
+  image?: string;
 }) => {
   return (
     <a
@@ -58,6 +60,15 @@ export const BentoGridItem = ({
           "h-full group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
         )}
       >
+        {image && (
+          <div className="absolute inset-0 flex items-center justify-center p-4">
+            <img
+              src={image}
+              alt={typeof title === "string" ? title : "Project image"}
+              className="w-full h-full object-cover object-center rounded-2xl opacity-50 group-hover/bento:opacity-70 transition-opacity duration-200"
+            />
+          </div>
+        )}
         {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
         {/* <div className=" font-sans font-extralight md:max-w-40 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10 text-center">
           {description}
@@ -69,13 +80,12 @@ export const BentoGridItem = ({
         >
           {title}
         </div>
-        
 
         <div className="flex items-center absolute bottom-0 pb-5 text-start">
           {stack?.map((icon, index) => (
             <div
               key={index}
-              className="border border-white/[.2] rounded-full bg-gray-500/20 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+              className="border border-white/[.2] rounded-full bg-gray-500/20 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center backdrop-blur-sm"
               style={{
                 transform: `translateX(-${5 * index + 2}px)`,
               }}

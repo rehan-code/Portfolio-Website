@@ -61,11 +61,11 @@ export const BentoGridItem = ({
         )}
       >
         {image && (
-          <div className="absolute inset-0 flex items-center justify-center p-4">
+          <div className="absolute group-hover/bento:-translate-x-2 transition duration-200 inset-0 flex items-center justify-center">
             <img
               src={image}
               alt={typeof title === "string" ? title : "Project image"}
-              className="w-full h-full object-cover object-center rounded-2xl opacity-50 group-hover/bento:opacity-70 transition-opacity duration-200"
+              className="w-full h-full object-cover object-center rounded-2xl opacity-50 group-hover/bento:opacity-60 transition-opacity duration-200"
             />
           </div>
         )}

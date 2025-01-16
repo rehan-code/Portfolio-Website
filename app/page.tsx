@@ -3,6 +3,7 @@ import Intro from "@/components/intro";
 import { links } from "@/lib/data";
 import Grid from "@/components/grid";
 import { LeftSocials } from "@/components/ui/LeftSocials";
+import Experience from "@/components/experience";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="">
         <FloatingNav navItems={links}/>
         <Intro />
+        <Experience />
         <Grid />
         <LeftSocials/>
       </div>

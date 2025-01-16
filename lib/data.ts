@@ -4,6 +4,10 @@ export const links = [
     link: "#home",
   },
   {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
     name: "Projects",
     link: "#projects",
   },

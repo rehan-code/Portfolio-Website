@@ -5,3 +5,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Cursor light effect */
+.cursor-light {
+  pointer-events: none;
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle at center, rgba(8, 19, 44, 0.14) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+  will-change: transform;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide cursor light when not moving */
+.cursor-light.inactive {
+  opacity: 0;
+}

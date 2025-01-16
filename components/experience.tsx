@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface ExperienceItem {
   company: string;
@@ -70,9 +70,35 @@ export const experience = [
 
 export default function Experience() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const scrollTimeout = useRef<NodeJS.Timeout>();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(true);
+      
+      // Clear existing timeout
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+
+      // Set new timeout to mark scrolling as finished after 150ms
+      scrollTimeout.current = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
+  }, []);
 
   return (
-    <section id="experience" className="pt-24 sm:pt-44">
+    <section id="experience" className="pt-24 sm:pt-24">
       <h2 className="font-extrabold text-4xl sm:text-5xl pb-10 px-12">
         Experience
       </h2>
@@ -120,13 +146,13 @@ export default function Experience() {
 
             <motion.div
               initial="hidden"
-              animate={hoveredIndex === index ? "visible" : "hidden"}
+              animate={!isScrolling && hoveredIndex === index ? "visible" : "hidden"}
               variants={{
-                visible: { height: "auto", opacity: 1, marginTop: 16 },
-                hidden: { height: 0, opacity: 0, marginTop: 0 },
+                visible: { height: "auto", opacity: 1 },
+                hidden: { height: 0, opacity: 0 },
               }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              style={{ overflow: "hidden" }}
+              style={{ overflow: "hidden", marginTop: 16 }}
             >
               <ul className="list-disc list-inside space-y-2 max-w-5xl">
                 {item.description.map((desc, i) => (

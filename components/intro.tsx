@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       // ref={ref}
       id="home"
-      className="mb-28 max-w-[60rem] pb-6 text-center sm:mb-0 scroll-mt-[100rem] mx-auto"
+      className="mb-28 max-w-[60rem] pb-6 text-center sm:mb-20 scroll-mt-[100rem] mx-auto"
     >
       <TextGenerateEffect
         words="Hi! I'm Rehan Nagoor Mohideen"

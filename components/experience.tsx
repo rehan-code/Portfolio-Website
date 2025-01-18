@@ -98,11 +98,11 @@ export default function Experience() {
   }, []);
 
   return (
-    <section id="experience" className="pt-24 sm:pt-24">
+    <section id="experience" className="pt-24 sm:pt-16 pb-4">
       <h2 className="font-extrabold text-4xl sm:text-5xl pb-10 px-12">
         Experience
       </h2>
-      <div className="space-y-12">
+      <div className="space-y-6">
         {experience.map((item, index) => (
           <motion.div
             key={index}

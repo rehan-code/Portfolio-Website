@@ -206,7 +206,7 @@ export const gridItems = [
 
 const Grid = () => {
   return (
-    <section id="projects" className="pt-20 sm:pt-24">
+    <section id="projects" className="pt-20 sm:pt-16">
       <div className="font-extrabold text-4xl sm:text-5xl px-12">Projects</div>
       <BentoGrid className="lg:max-w-full max-w-[70rem] pt-10 pb-20">
         {gridItems.map((item, i) => (

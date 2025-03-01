@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { Fa0 } from "react-icons/fa6";
 // import { useSectionInView } from "@/lib/hooks";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -75,7 +76,7 @@ export default function Intro() {
         </Link> */}
 
         <a
-          className="group bg-white border-2 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:border-0"
+          className="group bg-white h-12 border-2 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:border-0"
           href="/Rehan_Resume.pdf"
           // download
         >
@@ -84,19 +85,19 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 border-2 dark:border-0 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white h-12 w-12 border-2 dark:border-0 text-gray-700 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/rehan-nagoor-mohideen-6b3156202/"
           target="_blank"
         >
-          <BsLinkedin />
+          <FaLinkedinIn className="h-5 w-5" />
         </a>
 
         <a
-          className="bg-white p-4 border-2 dark:border-0 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white h-12 w-12 border-2 dark:border-0 text-gray-700 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/rehan-code"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithub className="h-5 w-5" />
         </a>
       </motion.div>
     </section>

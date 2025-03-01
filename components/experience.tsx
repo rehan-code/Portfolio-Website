@@ -154,10 +154,10 @@ export default function Experience() {
               transition={{ duration: 0.3, ease: "easeOut" }}
               style={{ overflow: "hidden", marginTop: 16 }}
             >
-              <ul className="list-disc list-inside space-y-2 max-w-5xl">
+              <ul className="list-disc space-y-2 max-w-5xl pl-6">
                 {item.description.map((desc, i) => (
-                  <li key={i} className="text-muted-foreground [&>*]:inline">
-                    <span className="whitespace-normal break-words">
+                  <li key={i} className="text-muted-foreground">
+                    <span className="whitespace-normal break-words -ml-1 pl-1 block">
                       {desc}
                     </span>
                   </li>

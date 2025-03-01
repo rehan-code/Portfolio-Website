@@ -11,7 +11,7 @@ export const LeftSocials = () => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
 
-      if (scrollYProgress.get() > 0.4) {
+      if (scrollYProgress.get() > 0.25) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -26,7 +26,6 @@ export const LeftSocials = () => {
         initial={{
           opacity: 1,
           y: 100,
-
         }}
         animate={{
           y: visible ? 0 : 100,

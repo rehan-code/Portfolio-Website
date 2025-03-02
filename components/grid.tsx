@@ -3,6 +3,26 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 export const gridItems = [
   {
+    id: 2,
+    title: "Makaan",
+    description: "Growing the Muslim Business Community",
+    header: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-2 text-center",
+    titleClassName: "justify-start",
+    stack: ["/Typescript.svg", "/Nextjs.svg", "Flutter.svg", "Supabase.svg"],
+    href: "https://makaan.io/",
+  },
+  {
+    id: 4,
+    title: "Qiraathub",
+    description: "Discover the 10 Qiraat of Islam",
+    header: "",
+    className: "lg:col-span-2 md:col-span-4 md:row-span-2 text-center",
+    titleClassName: "justify-start",
+    stack: ["/Typescript.svg", "/Nextjs.svg"],
+    href: "https://www.qiraathub.com/",
+  },
+  {
     id: 1,
     title: "CitySwipe",
     description: "Find your dream destination",
@@ -10,7 +30,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 text-center",
     titleClassName: "justify-start",
     stack: ["/Typescript.svg", "/Nextjs.svg", "/Gemini.svg", "/SQL.svg", "/Supabase.svg"],
-    href: "https://github.com/Team-S-I-R/cityswipe",
+    href: "https://cityswipe.app/",
   },
   {
     id: 2,
